@@ -61,9 +61,13 @@ public class Book {
 
 
     public void CheckOut(String name) {
+        this.CheckedOutTo = name;
+        this.isCheckedOut = true;
 
     }
 
     public void checkIn() {
+        this.CheckedOutTo = "";
+        this.isCheckedOut = false;
     }
 }
